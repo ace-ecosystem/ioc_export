@@ -1,0 +1,10 @@
+//rule created automatically with crits intelligence
+rule TEMPLATE_RULE_NAME
+{
+    meta:
+        author = "CRITS Export"
+    strings:
+TEMPLATE_STRINGS
+    condition:
+        uint16(0) == 0x5A4D and any of them
+}

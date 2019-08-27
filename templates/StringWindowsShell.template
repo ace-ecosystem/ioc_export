@@ -1,0 +1,11 @@
+//rule created automatically with crits intelligence
+rule TEMPLATE_RULE_NAME
+{
+    meta:
+        author = "CRITS Export"
+        file_ext = "bat,cmd,ps,ps1,vbs,vbe,wsf,wsc,mod,cls,bas,frm,vba,olevba"
+    strings:
+TEMPLATE_STRINGS
+    condition:
+        any of them
+}

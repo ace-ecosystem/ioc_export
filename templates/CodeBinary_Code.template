@@ -1,0 +1,10 @@
+//rule created automatically with crits intelligence
+rule TEMPLATE_RULE_NAME
+{
+    meta:
+        file_ext = "exe,dll,scr,cpl,ocx,sys,cmd"
+    strings:
+TEMPLATE_STRINGS
+    condition:
+        uint16(0) == 0x5A4D and any of them
+}
